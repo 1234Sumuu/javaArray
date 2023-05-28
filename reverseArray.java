@@ -10,7 +10,7 @@ public class ArrayReverse{
       System.out.println("Reverse array list are: " + reverseArray(arr));
   }
   public static void reverseArray(int[] arr){
-    int Start = 0;
+    int start = 0;
     int end = arr.length-1;
     
     while(start < end){
