@@ -16,5 +16,17 @@ public class kadanesAlgo{
         start = i + 1;
       }
     }
+    int[] maxSubarray = new int[end - start + 1];
+        System.arraycopy(arr, start, maxSubarray, 0, maxSubarray.length);
+        
+    return maxSubarray;
   }
+  public static void main(String[] args) {
+        int[] arr = {-2, -3, 4, -1, -2, 1, 5, -3};
+        
+        int[] maxSubarray = findMaxSubarraySum(arr);
+        
+        System.out.println("Maximum Subarray Sum: " + Arrays.stream(maxSubarray).sum());
+        System.out.println("Subarray: " + Arrays.toString(maxSubarray));
+    }
 }
